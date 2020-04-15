@@ -143,8 +143,7 @@ namespace SalmanAloufi_IE322
 
         private void BtnPicBox2_Click(object sender, EventArgs e)
         {
-            frmPic01 frm = new frmPic01();
-            frm.ShowDialog();
+           
         }
     }
 }

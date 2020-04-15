@@ -14,33 +14,33 @@ namespace SalmanAloufi_IE322
     {
 
 
-        //1D Arrays
 
-        Int32[] iArray1=new Int32[5];//Declaration & Definition
-        Int32[] iArray2 = new Int32[5]; //Declaration and Definition 
-        Int32[] iArray3 = new Int32[5] { 21, 22, 23, 24, 25 };//RECOMMENDED WAY:Declaration, Definition & Initialization
-        Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 }; //Declaration, Definition & Initialization (can omit size value only if initialization)           
-        Int32[] iArray5 = { 31, 32, 33, 34, 35 };//Declaration, Definition & Initialization (can omit new keyword only if initialization) 
 
-        //2D Arrays
-        int[,] iArray55 = new int[5, 5]; //Declaration and Definition of 2D array 
-        int[,,] iArray345 = new int[3, 4, 5]; //Declaration and Definition of 3D array
+        Int32[] iArray1 = new Int32[5];
+        Int32[] iArray2 = new Int32[5];
+        Int32[] iArray3 = new Int32[5] { 21, 22, 23, 24, 25 };
+        Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 };
+        Int32[] iArray5 = { 31, 32, 33, 34, 35 };
+
+
+        int[,] iArray55 = new int[5, 5];
+        int[,,] iArray345 = new int[3, 4, 5];
 
         int[,] iArray32 = new int[3, 2]
                                 {
                                          { 1, 2 },
                                          { 3, 4 },
                                          { 5, 6 }
-                                }; //Declaration,Definition & Initialization of 2D array
+                                };
 
 
-        //Array to be filled with Random numbers
+
         Random rnd = new Random();
         int[] b = new int[500];
-            
-       
 
-    public frmArray()
+
+
+        public frmArray()
         {
             InitializeComponent();
         }
@@ -55,8 +55,8 @@ namespace SalmanAloufi_IE322
             lblDisplay.Text = "1D Array named iArray3 using for Loop";
             for (Int32 i = 0; i < 5; i++)
             {
-                lblDisplay.Text= lblDisplay.Text+"\n"+Convert.ToString(iArray3[i]);
-                
+                lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(iArray3[i]);
+
             }
         }
 
@@ -67,7 +67,7 @@ namespace SalmanAloufi_IE322
             foreach (Int32 j in iArray5)
             {
                 lblDisplay.Text = lblDisplay.Text + "\n" + Convert.ToString(j);
-               
+
             }
         }
 
@@ -81,7 +81,7 @@ namespace SalmanAloufi_IE322
                 for (int j = 1; j < 3; j++)
                 {
                     lblDisplay.Text = lblDisplay.Text + "    " + Convert.ToString(iArray32[i - 1, j - 1]);
-                   
+
                 }
             }
         }
@@ -90,25 +90,25 @@ namespace SalmanAloufi_IE322
         {
             lblDisplay.Text = "Some Methods and Properties:";
 
-            // Some methods of Array
+
             lblDisplay.Text = lblDisplay.Text + "\n" + "Min of iArray5 is:" + iArray5.Min();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Max of iArray5 is:" + iArray5.Max();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Sum of iArray5 is:" + iArray5.Sum();
 
-            // Some properties of Array
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray5 is:" + iArray5.Rank;   // Dimensions
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray5 is:" + iArray5.Length;// size           
+
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray5 is:" + iArray5.Rank;
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray5 is:" + iArray5.Length;
 
 
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray23 is:" + iArray32.Rank;   // Dimensions
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray23 is:" + iArray32.Length;// Length: Total number of elements in all dimensions
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Rank of iArray23 is:" + iArray32.Rank;
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Length of iArray23 is:" + iArray32.Length;
 
 
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Number of Rows of  of iArray23 is:" + iArray32.GetLength(0);// first dimension
-            lblDisplay.Text = lblDisplay.Text + "\n" + "Number of Columns of iArray23 is:" + iArray32.GetLength(1);//second dimension
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Number of Rows of  of iArray23 is:" + iArray32.GetLength(0);
+            lblDisplay.Text = lblDisplay.Text + "\n" + "Number of Columns of iArray23 is:" + iArray32.GetLength(1);
 
 
-            
+
 
         }
 
@@ -128,9 +128,9 @@ namespace SalmanAloufi_IE322
             lblDisplay.Text = lblDisplay.Text + "\n" + "Max of Random Array  b is:" + b.Max();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Sum of Random Array  b is:" + b.Sum();
             lblDisplay.Text = lblDisplay.Text + "\n" + "Average of Random Array b is:" + b.Average();
-            
+
         }
-                
+
 
         private void BtnModifyAnArray_Click(object sender, EventArgs e)
         {
@@ -197,26 +197,26 @@ namespace SalmanAloufi_IE322
         {
             LstRandom.Items.Clear();
 
-            //1D Arrays
 
-            
-            Int32[] iArray3 = { 21, 22, 23, 24, 25 };//RECOMMENDED WAY:Declaration, Definition & Initialization
-            Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 }; //Declaration, Definition & Initialization (can omit size value only if initialization)           
-            Int32[] iArray5 = { 31, 32, 33, 34, 35 };//Declaration, Definition & Initialization (can omit new keyword only if initialization) 
 
-            //2D Arrays
-            int[,] iArray55 = new int[5, 5]; //Declaration and Definition of 2D array 
-            int[,,] iArray345 = new int[3, 4, 5]; //Declaration and Definition of 3D array
+
+            Int32[] iArray3 = { 21, 22, 23, 24, 25 };
+            Int32[] iArray4 = new Int32[] { 11, 12, 13, 14, 15 };
+            Int32[] iArray5 = { 31, 32, 33, 34, 35 };
+
+
+            int[,] iArray55 = new int[5, 5];
+            int[,,] iArray345 = new int[3, 4, 5];
 
             int[,] iArray32 = new int[3, 2]
                                     {
                                          { 1, 2 },
                                          { 3, 4 },
                                          { 5, 6 }
-                                    }; //Declaration,Definition & Initialization of 2D array
+                                    };
 
 
-            //Array to be filled with Random numbers
+
             Random rnd = new Random();
             int[] b = new int[500];
 
@@ -224,5 +224,5 @@ namespace SalmanAloufi_IE322
 
 
         }
-    }// end frmArray
-}//end namespace
+    }
+}

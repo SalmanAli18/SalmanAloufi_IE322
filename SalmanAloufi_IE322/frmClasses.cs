@@ -25,7 +25,7 @@ namespace SalmanAloufi_IE322
 
         private void BtnStartMyCar_Click(object sender, EventArgs e)
         {
-            MyCar.Start(); // calling the start method for MyCar
+            MyCar.Start(); 
         }
 
         private void BtnStartHisCar_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace SalmanAloufi_IE322
 
         private void BtnStartMyTruck_Click(object sender, EventArgs e)
         {
-            //  BtnStartMyTruck.Start();
+           
         }
 
         private void btnBack_Click(object sender, EventArgs e)

@@ -45,7 +45,7 @@ namespace SalmanAloufi_IE322
               , "Result");
         }
 
-        // Following are different calculation Methods
+        
         private double Add(double a, double b)
         {
             return a + b;
@@ -69,7 +69,7 @@ namespace SalmanAloufi_IE322
             return a % b;
         }
 
-        // Following are Methods related to ATM operations
+        
 
         private void Deposit(double n)
         {
@@ -82,7 +82,7 @@ namespace SalmanAloufi_IE322
 
         private void BtnDeposit_Click(object sender, EventArgs e)
         {
-            // Now despoit some amount
+            
             Deposit(200);
             CheckBalance();
             MessageBox.Show("Your current Balance is: " + Balance);
@@ -90,7 +90,7 @@ namespace SalmanAloufi_IE322
 
         private void BtnWithdraw_Click(object sender, EventArgs e)
         {
-            //Now Withdraw some amount
+          
             Withdraw(500);
             CheckBalance();
             MessageBox.Show("Your current Balance is: " + Balance);
